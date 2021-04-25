@@ -1,6 +1,5 @@
 @import "config";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
-@import "animations";
 
 * {
   box-sizing: border-box;
@@ -16,12 +15,11 @@ body {
 
 nav {
   justify-content: right;
-  text-align: right;
   padding: 25px;
 }
 
-#center-intro {
-  position: fixed;
+.center-intro {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -29,11 +27,9 @@ nav {
   border: 5px solid #ffd151;
   text-align: left;
   padding: 1rem;
-  font-size: 2rem;
 
   h1 {
     text-align: left;
-    padding: 1rem;
     font-size: 2rem;
   }
 }
@@ -41,3 +37,19 @@ nav {
 .hidden {
   display: none;
 }
+
+.down {
+  position: absolute;
+  margin-top: 90vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills {
+  position: absolute;
+  margin-top: 110vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@import "responsive";
