@@ -1,0 +1,43 @@
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import "animations";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: $primary-backround;
+  color: $primary-font;
+}
+
+nav {
+  justify-content: right;
+  text-align: right;
+  padding: 25px;
+}
+
+#center-intro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lighten($primary-backround, 10%);
+  border: 5px solid #ffd151;
+  text-align: left;
+  padding: 1rem;
+  font-size: 2rem;
+
+  h1 {
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
