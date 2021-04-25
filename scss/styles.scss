@@ -45,11 +45,42 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.skills {
+.skills-left {
   position: absolute;
+  display: flex;
   margin-top: 110vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+
+  .skill {
+    position: sticky;
+    display: inline;
+    text-align: center;
+    border: 5px solid $primary-font;
+    border-radius: 100%;
+    padding: 2.5rem 2rem;
+    justify-content: w;
+    // margin: ;
+  }
+}
+
+.skills-right {
+  position: absolute;
+  margin-top: 120vh;
+  left: 10%;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 3px;
+
+  .skill {
+    position: sticky;
+    display: flex;
+    border: 5px solid $primary-font;
+    border-radius: 100%;
+    padding: 2.5rem 2rem;
+    // margin: ;
+  }
 }
 
 @import "responsive";
