@@ -26,11 +26,11 @@ nav {
   background-color: lighten($primary-backround, 10%);
   border: 5px solid #ffd151;
   text-align: left;
-  padding: 1rem;
+  padding: 1em;
 
   h1 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
@@ -79,7 +79,6 @@ nav {
     border: 5px solid $primary-font;
     border-radius: 100%;
     padding: 2.5rem 2rem;
-    // margin: ;
   }
 }
 

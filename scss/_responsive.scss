@@ -1,13 +1,12 @@
 @media screen and (max-width: 768px) {
-  body {
-    color: green;
-    font-size: 5px;
+  .center-intro {
+    h1 {
+      font-size: 1.5em;
+    }
   }
-
   .skills-right {
     margin-right: 0;
   }
-
   .skills-left {
     margin-left: 0;
   }
