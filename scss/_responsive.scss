@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   .center-intro {
     h1 {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   }
   .skills-right {
@@ -15,6 +15,42 @@
     img {
       padding: 1rem 1rem;
       transform: scale(0.8);
+    }
+  }
+
+  .projects {
+    font-size: 1rem;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 2px 5px #888888;
+    top: 70%;
+
+    .project {
+      font-size: 1rem;
+      width: 5rem;
+      height: 5rem;
+      box-shadow: 2px 5px #888888;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .projects-container {
+    font-size: 1rem;
+  }
+
+  .skills-container {
+    top: 85%;
+  }
+  .skills {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    .skill {
+      font-size: 0.7rem;
     }
   }
 }
