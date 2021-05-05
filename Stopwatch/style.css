@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  position: relative;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "sriracha";
+  box-sizing: border-box;
+}
+
+#background {
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(green, purple);
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#outer_box {
+  width: 90vh;
+  height: 40vh;
+  border: 1rem solid black;
+}
+
+#inner_box {
+}
+
+#first_inner {
+}
+
+#second_inner {
+}
+
+#third_inner {
+}
+
+#fourth_inner {
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countdown Game</title>
+  </head>
+  <body>
+    <div class = "background">
+    <h1>Countdown Game</h1>
+    <p class = "subtitle">Click the numbers you've used so you don't lose track</p>
+    <h2>
+      <p class = "numbers">
+        <span class = "bignumber0 num">1</span>
+        <span class = "bignumber1 num">2</span>
+        <span class = "lilnumber0 num">3</span>
+        <span class = "lilnumber1 num">4</span>
+        <span class = "lilnumber2 num">5</span>
+        <span class = "lilnumber3 num">6</span>
+      </p>
+      <script>
+      function playAudio(url) {
+        new Audio(url).play()
+        }
+      </script>
+      <button class = "calculate buttons" onclick="playAudio('timersound.mp3')">Calculate</button>
+      <button class = "reset hidden buttons"><a href="C:/Users/liamp/Desktop/Projects/Website/Portfolio/Countdown/countdown.html">Reset</button></a>
+
+      <div>
+        <p class = "summary hidden">Try to make
+        </p>
+        <p class = "final"></p>
+        <p class = "summary hidden"></p>
+      </div>
+      <div class = "timerText"></div>
+    </div>
+    </h2>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

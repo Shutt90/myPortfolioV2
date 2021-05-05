@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+.background {
+  background: linear-gradient(#e66465, #9198e5);
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+}
+
+.num {
+  font-size: 150px;
+  border: solid black;
+  margin: 10px;
+}
+
+.final {
+  color: red;
+  font-size: 350px;
+}
+
+.buttons {
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.strike {
+  filter: blur(0.2rem);
+  text-decoration: line-through;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
