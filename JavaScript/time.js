@@ -19,7 +19,7 @@ const greeting = `hope you're having a great ${day} so far!`;
 const outtro = `hope you're having a great ${day}`;
 
 if (hour < 12) {
-  timeEl.innerText = "Good Morning,";
-} else if (hour <= 17 && hour > 12) {
+  timeEl.innerText = `Good Morning, ${greeting}`;
+} else if (hour <= 17 && hour > 00) {
   timeEl.innerText = `Good Afternoon, ${greeting}`;
-} else timeEl.innerText = "Good Evening,";
+} else timeEl.innerText = `Good Evening, ${outtro}`;

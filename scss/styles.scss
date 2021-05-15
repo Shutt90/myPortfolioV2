@@ -42,6 +42,44 @@ div {
         padding: 1rem 1rem;
       }
     }
+
+    .modal-one {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lighten($primary-backround, 10%);
+      border: 5px solid #ffd151;
+      text-align: left;
+      padding: 1em;
+      z-index: 10;
+    }
+    .modal-two {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lighten($primary-backround, 10%);
+      border: 5px solid #ffd151;
+      text-align: left;
+      padding: 1em;
+      z-index: 10;
+    }
+    .modal-three {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lighten($primary-backround, 10%);
+      border: 5px solid #ffd151;
+      text-align: left;
+      padding: 1em;
+      z-index: 10;
+    }
+  }
+
+  .blurred {
+    filter: blur(10px);
   }
 
   h1 {
