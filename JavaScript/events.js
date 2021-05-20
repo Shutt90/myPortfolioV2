@@ -1,11 +1,3 @@
-// //Grab all the class items
-// const btn = [btnOne, btnTwo, btnThree]
-
-// for (i = 0; i < btn.length; i++) {
-//   btn[i]
-// }
-
-// console.log(btn.entries());
 const btnOne = document.querySelector(".one");
 const btnTwo = document.querySelector(".two");
 const btnThree = document.querySelector(".three");
@@ -14,7 +6,17 @@ const modalTwo = document.querySelector(".modal-two");
 const modalThree = document.querySelector(".modal-three");
 
 const visible = function (modal) {
-  modal.classList.toggle("hidden");
+  if (modal.classList.contains("hidden")) {
+    return modal.classList.remove("hidden");
+  } else if (
+    !modalOne.classList.contains("hidden") ||
+    !modalTwo.classList.contains("hidden") ||
+    !modalThree.classList.contains("hidden")
+  ) {
+    modalOne.classList.toggle("hidden");
+    modalTwo.classList.toggle("hidden");
+    modalThree.classList.toggle("hidden");
+  }
 };
 
 btnOne.addEventListener("click", (e) => {
