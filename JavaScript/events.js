@@ -5,26 +5,30 @@ const modalOne = document.querySelector(".modal-one");
 const modalTwo = document.querySelector(".modal-two");
 const modalThree = document.querySelector(".modal-three");
 
-const visible = function (modal) {
-  if (modal.classList.contains("hidden")) {
-    return modal.classList.remove("hidden");
-  } else if (
-    !modalOne.classList.contains("hidden") ||
-    !modalTwo.classList.contains("hidden") ||
-    !modalThree.classList.contains("hidden")
-  ) {
-    modalOne.classList.toggle("hidden");
-    modalTwo.classList.toggle("hidden");
-    modalThree.classList.toggle("hidden");
+const arr = [modalOne, modalTwo, modalThree];
+
+const modalSelect = function (modal) {
+  for (let i of arr) {
+    i.classList.add("hidden");
   }
+  return modal.classList.remove("hidden");
+  // if (current.classList.contains("hidden")) {
+  //   modals.classList.add("hidden");
+  // }
+  // return current.classList.add("hidden");
 };
 
 btnOne.addEventListener("click", (e) => {
-  visible(modalOne);
+  modalSelect(modalOne);
 });
+
 btnTwo.addEventListener("click", (e) => {
-  visible(modalTwo);
+  modalSelect(modalTwo);
 });
 btnThree.addEventListener("click", (e) => {
-  visible(modalThree);
+  modalSelect(modalThree);
 });
+
+// body.addEventListener("click", function () {
+//   modalSelect();
+// });
