@@ -76,6 +76,11 @@ div {
       padding: 1em;
       z-index: 10;
     }
+
+    .exit {
+      display: flex;
+      left: 50%;
+    }
   }
 
   .blurred {
@@ -98,6 +103,7 @@ div {
   position: absolute;
   top: 25%;
   right: 5%;
+  z-index: 0;
 }
 
 .project {
@@ -111,6 +117,10 @@ div {
 
 .hidden {
   display: none;
+}
+
+.blur {
+  filter: blur(1.5rem);
 }
 
 a:link {

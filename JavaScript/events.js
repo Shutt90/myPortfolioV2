@@ -1,34 +1,34 @@
 const btnOne = document.querySelector(".one");
 const btnTwo = document.querySelector(".two");
 const btnThree = document.querySelector(".three");
-const modalOne = document.querySelector(".modal-one");
-const modalTwo = document.querySelector(".modal-two");
-const modalThree = document.querySelector(".modal-three");
+const modal1 = document.querySelector(".modal-one");
+const modal2 = document.querySelector(".modal-two");
+const modal3 = document.querySelector(".modal-three");
 
-const arr = [modalOne, modalTwo, modalThree];
+const arr = [modal1, modal2, modal3];
 
-const modalSelect = function (modal) {
+const loopOver = () => {
   for (let i of arr) {
     i.classList.add("hidden");
   }
-  return modal.classList.remove("hidden");
-  // if (current.classList.contains("hidden")) {
-  //   modals.classList.add("hidden");
-  // }
-  // return current.classList.add("hidden");
+};
+
+const modalSelect = function (modal) {
+  loopOver();
+  modal.classList.remove("hidden"), body.classList.add("blur");
 };
 
 btnOne.addEventListener("click", (e) => {
-  modalSelect(modalOne);
+  modalSelect(modal1);
 });
 
 btnTwo.addEventListener("click", (e) => {
-  modalSelect(modalTwo);
+  modalSelect(modal2);
 });
 btnThree.addEventListener("click", (e) => {
-  modalSelect(modalThree);
+  modalSelect(modal3);
 });
 
-// body.addEventListener("click", function () {
-//   modalSelect();
-// });
+document.querySelector(".exit").addEventListener("click", function () {
+  loopOver();
+});
