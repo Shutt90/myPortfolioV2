@@ -37,6 +37,10 @@ div {
       align-items: center;
     }
 
+    .container-modal {
+      display: flex;
+    }
+
     .links-intro {
       img {
         padding: 1rem 1rem;
@@ -78,13 +82,15 @@ div {
     }
 
     .exit {
-      display: flex;
-      left: 50%;
+      cursor: pointer;
     }
-  }
 
-  .blurred {
-    filter: blur(10px);
+    flex-box {
+      shift-right {
+        position: absolute;
+        left: 95%;
+      }
+    }
   }
 
   h1 {
@@ -101,18 +107,21 @@ div {
 
 .projects-container {
   position: absolute;
-  top: 25%;
-  right: 5%;
+  top: 75%;
+  right: 3%;
   z-index: 0;
 }
 
-.project {
-  font-size: 2rem;
-  background-color: #ffd151;
-  border-radius: 100%;
-  width: 10rem;
-  height: 10rem;
-  box-shadow: 5px 10px #888888;
+button {
+  display: block;
+  width: 150px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50px;
+  background-color: darken($primary-backround, 25%);
+  border-radius: 10px;
 }
 
 .hidden {

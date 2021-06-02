@@ -12,6 +12,7 @@
   }
 
   .links-intro {
+    right: 5%;
     img {
       padding: 0;
       margin: 0;
@@ -54,5 +55,11 @@
     .skill {
       font-size: 0.7rem;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .max-1200 {
+    display: none;
   }
 }
