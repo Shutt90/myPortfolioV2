@@ -19,6 +19,14 @@ nav {
 }
 
 div {
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
   .center-intro {
     position: absolute;
     top: 50%;
@@ -29,16 +37,8 @@ div {
     text-align: left;
     padding: 1em;
 
-    .container {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-    }
-
     .container-modal {
-      display: flex;
+      display: absolute;
     }
 
     .links-intro {
@@ -49,6 +49,7 @@ div {
 
     .modal-one {
       position: absolute;
+      align-items: center;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -130,6 +131,10 @@ button {
 
 .blur {
   filter: blur(1.5rem);
+}
+
+.links-small {
+  display: none;
 }
 
 a:link {
